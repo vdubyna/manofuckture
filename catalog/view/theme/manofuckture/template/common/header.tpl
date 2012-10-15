@@ -49,6 +49,9 @@ DD_belatedPNG.fix('#logo img');
   <?php if ($logo) { ?>
   <div id="logo"><a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a></div>
   <?php } ?>
+  <?php foreach ($modules as $module) { ?>
+  <?php echo $module; ?>
+  <?php } ?>
   <?php echo $language; ?>
   <?php echo $currency; ?>
   <?php echo $cart; ?>

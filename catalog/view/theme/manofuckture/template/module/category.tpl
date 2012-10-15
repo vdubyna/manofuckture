@@ -1,5 +1,4 @@
 <div class="box">
-  <div class="box-content">
     <div class="box-category">
       <ul>
         <?php foreach ($categories as $category) { ?>
@@ -26,5 +25,4 @@
         <?php } ?>
       </ul>
     </div>
-  </div>
 </div>
