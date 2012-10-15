@@ -75,6 +75,11 @@
                   <?php } else { ?>
                   <option value="column_right"><?php echo $text_column_right; ?></option>
                   <?php } ?>
+                  <?php if ($module['position'] == 'header') { ?>
+                  <option value="header" selected="selected"><?php echo $text_header; ?></option>
+                  <?php } else { ?>
+                  <option value="header"><?php echo $text_header; ?></option>
+                  <?php } ?>
                 </select></td>
               <td class="left"><select name="banner_module[<?php echo $module_row; ?>][status]">
                   <?php if ($module['status']) { ?>
