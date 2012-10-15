@@ -4,11 +4,6 @@ html {
 	padding: 0;
 }
 
-@font-face {
-    font-family: myCustomFont;
-    src: url(path/to/my/font);
-}
-
 body {
 	background-color: #6c442f;
 	color: #000000;
