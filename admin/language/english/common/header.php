@@ -21,6 +21,7 @@ $_['text_dashboard']                   = 'Dashboard';
 $_['text_design']                      = 'Design';
 $_['text_download']                    = 'Downloads';
 $_['text_error_log']                   = 'Error Logs';
+$_['text_export']                      = 'Export Tool';
 $_['text_extension']                   = 'Extensions';
 $_['text_feed']                        = 'Product Feeds';
 $_['text_front']                       = 'Store Front';

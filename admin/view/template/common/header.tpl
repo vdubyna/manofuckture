@@ -153,6 +153,7 @@ $(document).ready(function(){
             </ul>
           </li>
           <li><a href="<?php echo $error_log; ?>"><?php echo $text_error_log; ?></a></li>
+          <li><a href="<?php echo $export; ?>"><?php echo $text_export; ?></a></li>
           <li><a href="<?php echo $backup; ?>"><?php echo $text_backup; ?></a></li>
         </ul>
       </li>
