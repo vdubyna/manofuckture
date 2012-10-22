@@ -4,10 +4,15 @@ html {
 	padding: 0;
 }
 
+@font-face {
+    font-family: ManoFont;
+    src: url('WienLight.ttf');
+}
+
 body {
 	background-color: #6c442f;
 	color: #000000;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: ManoFont;
 	margin: 0px;
 	padding: 0px;
 }
@@ -287,12 +292,13 @@ label {
 #header #welcome {
     position: absolute;
     top: 30px;
-    right: 210px;
+    right: 205px;
     z-index: 15;
 }
 
 #header #welcome a {
     font-size: 16px;
+    padding-left: 10px;
 }
 
 #header .links {
@@ -563,7 +569,7 @@ a.button, input.button {
 	cursor: pointer;
 	color: #FFFFFF;
 	line-height: 12px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: ManoFont;
 	font-size: 12px;
 	font-weight: bold;
 	background: url('../image/button.png') top left repeat-x;
@@ -621,7 +627,7 @@ a.button:hover, input.button:hover {
 	background: #FFFFFF url('../image/tab.png') repeat-x;
 	padding: 7px 15px 6px 15px;
 	float: left;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: ManoFont;
 	font-size: 13px;
 	font-weight: bold;
 	text-align: center;
@@ -655,7 +661,7 @@ a.button:hover, input.button:hover {
 	border: 1px solid #DBDEE1;
 	background: url('../image/background.png') repeat-x;
 	padding: 8px 10px 7px 10px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: ManoFont;
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 14px;
@@ -693,14 +699,20 @@ a.button:hover, input.button:hover {
 }
 .box-product .name {
     margin-bottom: 5px;
+    height: 28px;
+    position: relative;
+
 }
 .box-product .name a {
 	color: #fecb67;
 	font-weight: bold;
 	text-decoration: none;
 	display: block;
-	margin-bottom: 4px;
     text-align: center;
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
 }
 .box-product .price {
 	display: block;
