@@ -11,16 +11,16 @@ html {
 
 body {
 	background-color: #6c442f;
-	color: #000000;
+    color: #fecb67;
 	font-family: ManoFont;
 	margin: 0px;
 	padding: 0px;
 }
 body, td, th, input, textarea, select, a {
-	font-size: 12px;
+	font-size: 20px;
 }
 h1, .welcome {
-	color: #636E75;
+    color: #fecb67;
 	font: Verdana;
 	margin-top: 0px;
 	margin-bottom: 20px;
@@ -29,7 +29,7 @@ h1, .welcome {
 	text-shadow: 0 0 1px rgba(0, 0, 0, .01);
 }
 h2 {
-	color: #000000;
+    color: #fecb67;
 	font-size: 16px;
 	margin-top: 0px;
 	margin-bottom: 5px;
@@ -567,19 +567,16 @@ table.radio tr.highlight:hover td {
 /* button */
 a.button, input.button {
 	cursor: pointer;
-	color: #FFFFFF;
+    background: #6c442f;
 	line-height: 12px;
 	font-family: ManoFont;
 	font-size: 12px;
 	font-weight: bold;
-	background: url('../image/button.png') top left repeat-x;
+    background-color: #fecb67;
 	-webkit-border-radius: 7px 7px 7px 7px;
 	-moz-border-radius: 7px 7px 7px 7px;
 	-khtml-border-radius: 7px 7px 7px 7px;
 	border-radius: 7px 7px 7px 7px;
-	-webkit-box-shadow: 0px 2px 2px #DDDDDD;
-	-moz-box-shadow: 0px 2px 2px #DDDDDD;
-	box-shadow: 0px 2px 2px #DDDDDD;
 }
 a.button {
 	display: inline-block;
@@ -593,7 +590,7 @@ input.button {
 	padding: 0px 12px 0px 12px;
 }
 a.button:hover, input.button:hover {
-	background: url('../image/button-active.png') repeat-x;
+	/*background: url('../image/button-active.png') repeat-x;*/
 }
 .buttons {
 	background: #FFFFFF;
@@ -1016,8 +1013,14 @@ a.button:hover, input.button:hover {
 }
 /* Product */
 .product-info {
+    padding: 10px;
+    border: 2px solid #fecb67;
 	overflow: auto;
 	margin-bottom: 20px;
+    -webkit-border-radius: 12px 12px 12px 12px;
+    -moz-border-radius: 12px 12px 12px 12px;
+    -khtml-border-radius: 12px 12px 12px 12px;
+    border-radius: 12px 12px 12px 12px;
 }
 .product-info > .left {
 	float: left;
@@ -1027,11 +1030,15 @@ a.button:hover, input.button:hover {
 	margin-left: 265px;
 }
 .product-info .image {
-	border: 1px solid #E7E7E7;
 	float: left;
 	margin-bottom: 20px;
-	padding: 10px;
 	text-align: center;
+}
+.product-info .image img {
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -khtml-border-radius: 20px 20px 20px 20px;
+    border-radius: 20px 20px 20px 20px;
 }
 .product-info .image-additional {
 	width: 260px;
@@ -1040,7 +1047,10 @@ a.button:hover, input.button:hover {
 	overflow: hidden;
 }
 .product-info .image-additional img {
-	border: 1px solid #E7E7E7;
+    -webkit-border-radius: 7px 7px 7px 7px;
+    -moz-border-radius: 7px 7px 7px 7px;
+    -khtml-border-radius: 7px 7px 7px 7px;
+    border-radius: 7px 7px 7px 7px;
 }
 .product-info .image-additional a {
 	float: left;
@@ -1049,28 +1059,25 @@ a.button:hover, input.button:hover {
 	margin-bottom: 10px;
 }
 .product-info .description {
-	border-top: 1px solid #E7E7E7;
-	border-bottom: 1px solid #E7E7E7;
 	padding: 5px 5px 10px 5px;
 	margin-bottom: 10px;
 	line-height: 20px;
-	color: #4D4D4D;
+    color: #fecb67;
 }
 .product-info .description span {
-	color: #38B0E3;
+    color: #fecb67;
 }
 .product-info .description a {
-	color: #4D4D4D;
+    color: #fecb67;
 	text-decoration: none;
 }
 .product-info .price {
 	overflow: auto;
-	border-bottom: 1px solid #E7E7E7;
 	padding: 0px 5px 10px 5px;
 	margin-bottom: 10px;
 	font-size: 15px;
 	font-weight: bold;
-	color: #333333;
+    color: #fecb67;
 }
 .product-info .price-old {
 	color: #F00;
@@ -1079,7 +1086,7 @@ a.button:hover, input.button:hover {
 .product-info .price-new {
 }
 .product-info .price-tax {
-	font-size: 12px;
+	font-size: 7px;
 	font-weight: normal;
 	color: #999;
 }
@@ -1114,10 +1121,9 @@ a.button:hover, input.button:hover {
 	cursor: pointer;
 }
 .product-info .cart {
-	border-bottom: 1px solid #E7E7E7;
 	padding: 0px 5px 10px 5px;
 	margin-bottom: 20px;
-	color: #4D4D4D;
+    color: #fecb67;
 	overflow: auto;
 }
 .product-info .cart div {

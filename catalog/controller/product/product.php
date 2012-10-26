@@ -345,7 +345,10 @@ class ControllerProductProduct extends Controller {
 			$tags = explode(',', $product_info['tag']);
 			
 			foreach ($tags as $tag) {
-				$this->data['tags'][] = array(
+				if (empty($tag)) {
+                    continue;
+                }
+                $this->data['tags'][] = array(
 					'tag'  => trim($tag),
 					'href' => $this->url->link('product/search', 'filter_tag=' . trim($tag))
 				);
