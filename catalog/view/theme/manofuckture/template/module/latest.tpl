@@ -21,7 +21,7 @@
             <?php if ($product['rating']) { ?>
             <div class="rating"><img src="catalog/view/theme/default/image/stars-<?php echo $product['rating']; ?>.png" alt="<?php echo $product['reviews']; ?>" /></div>
             <?php } ?>
-            <div class="right-text"><a href="#" onclick="addToCart('<?php echo $product['product_id']; ?>'); return false;"><?php echo $button_cart; ?></a></div>
+            <div class="right-text add-to-cart"><a href="#" onclick="addToCart('<?php echo $product['product_id']; ?>'); return false;"><?php echo $button_cart; ?></a></div>
         </div>
       </div>
       <?php } ?>
