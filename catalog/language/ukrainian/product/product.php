@@ -20,7 +20,7 @@ Ask a question http://forum.opencart.ua
 
 $_['text_price'] = 'Ціна'; #35646
 $_['text_model'] = 'Модель:'; #35647
-$_['text_manufacturer'] = 'Виробник'; #35648
+$_['text_manufacturer'] = 'Виробник:'; #35648
 $_['text_write'] = 'Написати відгук'; #35649
 $_['text_no_reviews'] = 'Відгуки для даного товару відсутні'; #35650
 $_['text_qty'] = 'Кількість:'; #35651

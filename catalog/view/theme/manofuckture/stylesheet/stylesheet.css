@@ -17,7 +17,7 @@ body {
 	padding: 0px;
 }
 body, td, th, input, textarea, select, a {
-	font-size: 20px;
+	font-size: 18px;
 }
 h1, .welcome {
     color: #fecb67;
@@ -534,10 +534,6 @@ table.radio tr td:first-child {
 table.radio tr td:first-child input {
 	margin-top: 1px;
 }
-table.radio tr.highlight:hover td {
-	background: #F1FFDD;
-	cursor: pointer;
-}
 .pagination {
 	border-top: 1px solid #EEEEEE;
 	padding-top: 8px;
@@ -598,8 +594,6 @@ a.button:hover, input.button:hover {
 	/*background: url('../image/button-active.png') repeat-x;*/
 }
 .buttons {
-	background: #FFFFFF;
-	border: 1px solid #EEEEEE;
 	overflow: auto;
 	padding: 6px;
 	margin-bottom: 20px;
@@ -620,37 +614,47 @@ a.button:hover, input.button:hover {
 .htabs {
 	height: 30px;
 	line-height: 16px;
-	border-bottom: 1px solid #DDDDDD;
 }
 .htabs a {
-	border-top: 1px solid #DDDDDD;
-	border-left: 1px solid #DDDDDD;
-	border-right: 1px solid #DDDDDD;
-	background: #FFFFFF url('../image/tab.png') repeat-x;
 	padding: 7px 15px 6px 15px;
+    color: #6c442f;
 	float: left;
 	font-family: ManoFont;
 	font-size: 13px;
 	font-weight: bold;
 	text-align: center;
 	text-decoration: none;
-	color: #000000;
 	margin-right: 2px;
 	display: none;
+    -webkit-border-radius: 7px 7px 0px 0px;
+    -moz-border-radius: 7px 7px 0px 0px;
+    -khtml-border-radius: 7px 7px 0px 0px;
+    border-radius: 7px 7px 0px 0px;
+    background: #fecb67;
 }
 .htabs a.selected {
 	padding-bottom: 7px;
-	background: #FFFFFF;
+	background: #fecb67;
 }
 .tab-content {
-	border-left: 1px solid #DDDDDD;
-	border-right: 1px solid #DDDDDD;
-	border-bottom: 1px solid #DDDDDD;
+    background: #fecb67;
+    color: #6c442f;
+	border: 1px solid #fecb67;
 	padding: 10px;
 	margin-bottom: 20px;
 	z-index: 2;
 	overflow: auto;
+    -webkit-border-radius: 0px 12px 12px 12px;
+    -moz-border-radius: 0px 12px 12px 12px;
+    -khtml-border-radius: 0px 12px 12px 12px;
+    border-radius: 0px 12px 12px 12px;
+
 }
+
+.product-info .tab-content .description a {
+    text-decoration: underline;
+}
+
 /* box */
 .box {
 	margin-bottom: 10px;
@@ -702,7 +706,7 @@ a.button:hover, input.button:hover {
 }
 .box-product .name {
     margin-bottom: 5px;
-    height: 28px;
+    height: 31px;
     position: relative;
 
 }
@@ -789,7 +793,6 @@ a.button:hover, input.button:hover {
 	padding: 10px;
 	overflow: auto;
 	margin-bottom: 20px;
-	border: 1px solid #EEEEEE;
 }
 #content .content .left {
 	float: left;
@@ -1026,7 +1029,7 @@ a.button:hover, input.button:hover {
 }
 /* Product */
 .product-info {
-    padding: 10px;
+    padding: 25px;
     border: 2px solid #fecb67;
 	overflow: auto;
 	margin-bottom: 20px;
@@ -1040,7 +1043,7 @@ a.button:hover, input.button:hover {
 	margin-right: 15px;
 }
 .product-info > .left + .right {
-	margin-left: 265px;
+	margin-left: 255px;
 }
 .product-info .image {
 	float: left;
@@ -1075,21 +1078,18 @@ a.button:hover, input.button:hover {
 	padding: 5px 5px 10px 5px;
 	margin-bottom: 10px;
 	line-height: 20px;
-    color: #fecb67;
 }
 .product-info .description span {
-    color: #fecb67;
+    color: #6c442f;
 }
 .product-info .description a {
-    color: #fecb67;
+    color: #6c442f;
 	text-decoration: none;
 }
 .product-info .price {
-	overflow: auto;
-	padding: 0px 5px 10px 5px;
-	margin-bottom: 10px;
-	font-size: 15px;
-	font-weight: bold;
+    overflow: auto;
+	padding: 10px 0;
+	font-size: 20px;
     color: #fecb67;
 }
 .product-info .price-old {
@@ -1134,10 +1134,10 @@ a.button:hover, input.button:hover {
 	cursor: pointer;
 }
 .product-info .cart {
-	padding: 0px 5px 10px 5px;
-	margin-bottom: 20px;
+	padding: 10px 0;
     color: #fecb67;
 	overflow: auto;
+    font-size: 20px;
 }
 .product-info .cart div {
 	float: left;
@@ -1156,14 +1156,10 @@ a.button:hover, input.button:hover {
 }
 .product-info .review {
 	color: #4D4D4D;
-	border-top: 1px solid #E7E7E7;
-	border-left: 1px solid #E7E7E7;
-	border-right: 1px solid #E7E7E7;
 	margin-bottom: 10px;
 }
 .product-info .review > div {
 	padding: 8px;
-	border-bottom: 1px solid #E7E7E7;
 	line-height: 20px;
 }
 .product-info .review > div > span {
@@ -1173,6 +1169,12 @@ a.button:hover, input.button:hover {
 	overflow: auto;
 	line-height: normal;
 }
+
+.product-info .share {
+    float: right;
+    padding: 10px 0;
+}
+
 .product-info .review .share a {
 	text-decoration: none;
 }
@@ -1461,18 +1463,19 @@ a.button:hover, input.button:hover {
 	width: 100%;
 	margin-bottom: 15px;
 	border-collapse: collapse;
-	border-top: 1px solid #DDDDDD;
-	border-left: 1px solid #DDDDDD;
-	border-right: 1px solid #DDDDDD;
+	border-top: 1px solid #fecb67;
+	border-left: 1px solid #fecb67;
+	border-right: 1px solid #fecb67;
 }
 .cart-info td {
 	padding: 7px;
 }
 .cart-info thead td {
-	color: #4D4D4D;
+	color: #6c442f;
 	font-weight: bold;
-	background-color: #F7F7F7;
+	background-color: #fecb67;
 	border-bottom: 1px solid #DDDDDD;
+    border: 2px solid #fecb67;
 }
 .cart-info thead .image {
 	text-align: center;
@@ -1485,10 +1488,10 @@ a.button:hover, input.button:hover {
 }
 .cart-info tbody td {
 	vertical-align: top;
-	border-bottom: 1px solid #DDDDDD;
+	border-bottom: 1px solid #fecb67;
 }
 .cart-info tbody .image img {
-	border: 1px solid #DDDDDD;
+	border: 1px solid #fecb67;
 }
 .cart-info tbody .image {
 	text-align: center;
@@ -1512,7 +1515,7 @@ a.button:hover, input.button:hover {
 	display: none;
 }
 .cart-total {
-	border-top: 1px solid #DDDDDD;
+	border-top: 1px solid #fecb67;
 	overflow: auto;
 	padding-top: 8px;
 	margin-bottom: 15px;
@@ -1526,17 +1529,23 @@ a.button:hover, input.button:hover {
 }
 /* checkout */
 .checkout-heading {
-	background: #F8F8F8;
-	border: 1px solid #DBDEE1;
+	background: #fecb67;
 	padding: 8px;
 	font-weight: bold;
 	font-size: 13px;
-	color: #555555;
+	color: #6c442f;
 	margin-bottom: 15px;
+
+    border: 2px solid #fecb67;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -khtml-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
 }
 .checkout-heading a {
+    color: #6c442f;
 	float: right;
-	margin-top: 1px;
+	margin-top: -3px;
 	font-weight: normal;
 	text-decoration: none;
 }
@@ -1559,19 +1568,19 @@ a.button:hover, input.button:hover {
 .checkout-product table {
 	width: 100%;
 	border-collapse: collapse;
-	border-top: 1px solid #DDDDDD;
-	border-left: 1px solid #DDDDDD;
-	border-right: 1px solid #DDDDDD;
+	border-top: 1px solid #fecb67;
+	border-left: 1px solid #fecb67;
+	border-right: 1px solid #fecb67;
 	margin-bottom: 20px;
 }
 .checkout-product td {
 	padding: 7px;
 }
 .checkout-product thead td {
-	color: #4D4D4D;
+	color: #6c442f;
 	font-weight: bold;
-	background-color: #F7F7F7;
-	border-bottom: 1px solid #DDDDDD;
+	background-color: #fecb67;
+	border-bottom: 1px solid #fecb67;
 }
 .checkout-product thead .name, .checkout-product thead .model {
 	text-align: left;
@@ -1591,7 +1600,7 @@ a.button:hover, input.button:hover {
 }
 .checkout-product tfoot td {
 	text-align: right;
-	border-bottom: 1px solid #DDDDDD;
+	border-bottom: 1px solid #fecb67;
 }
 .contact-info {
 	overflow: auto;
@@ -1668,9 +1677,9 @@ a.button:hover, input.button:hover {
 
 #cart-total {
     display:inline-block;
-    padding: 10px;
+    padding: 0 10px;
     width: 128px;
-    height: 36px;
+    height: 55px;
     border: 2px solid #fecb67;
     -webkit-border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
@@ -1710,4 +1719,57 @@ a.button:hover, input.button:hover {
 
 .footer-information ul > li a {
     font-size: 20px;
+}
+
+a.addthis_button_compact {
+    margin-top: -5px;
+}
+
+a.addthis_button_compact > span {
+    background: none;
+}
+
+#button-cart {
+    height: 30px;
+    font-size: 18px;
+}
+
+#mini-cart-btn {
+    background: #fecb67 url('../image/cart-down.png') center center no-repeat;
+    -webkit-border-radius: 0px 10px 10px 0px;
+    -moz-border-radius: 0px 10px 10px 0px;
+    -khtml-border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 10px 10px 0px;
+
+    width: 25px;
+    height: 58px;
+    position: absolute;
+    right: 16px;
+    top: 65px;
+}
+
+#notification .success{
+    color: #fecb67
+}
+
+.product-info .review a, #tab-review h2 {
+    color: #6c442f;
+}
+
+#tab-review span > span, #tab-review span {
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+#tab-review .buttons {
+    background: none;
+    border: none;
+}
+
+#button-review {
+    color: #fecb67;
+    background: #6c442f;
+    font-size: 18px;
+    height: 20px;
+    line-height: 18px;
 }

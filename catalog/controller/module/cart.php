@@ -11,9 +11,8 @@ class ControllerModuleCart extends Controller {
 			
 		// Totals
 		$this->load->model('setting/extension');
-		
+
 		$total_data = array();					
-		$total = 0;
 		$taxes = $this->cart->getTaxes();
 		
 		// Display prices
@@ -27,7 +26,11 @@ class ControllerModuleCart extends Controller {
 			}
 			
 			array_multisort($sort_order, SORT_ASC, $results);
-			
+            $total = 0;
+            foreach ($this->cart->getProducts() as $product) {
+                $total += $product['total'];
+            }
+
 			foreach ($results as $result) {
 				if ($this->config->get($result['code'] . '_status')) {
 					$this->load->model('total/' . $result['code']);

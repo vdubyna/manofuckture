@@ -13,8 +13,11 @@ class ControllerCheckoutPaymentMethod extends Controller {
 		
 		if (!empty($payment_address)) {
 			// Totals
-			$total_data = array();					
-			$total = 0;
+			$total_data = array();
+            $total = 0;
+            foreach ($this->cart->getProducts() as $product) {
+                $total += $product['total'];
+            }
 			$taxes = $this->cart->getTaxes();
 			
 			$this->load->model('setting/extension');

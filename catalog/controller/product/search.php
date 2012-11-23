@@ -64,7 +64,7 @@ class ControllerProductSearch extends Controller {
 		} else {
 			$limit = $this->config->get('config_catalog_limit');
 		}
-		
+
 		if (isset($this->request->get['filter_name'])) {
 			$this->document->setTitle($this->language->get('heading_title') .  ' - ' . $this->request->get['filter_name']);
 		} else {

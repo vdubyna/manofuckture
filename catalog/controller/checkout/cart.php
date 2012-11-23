@@ -336,8 +336,13 @@ class ControllerCheckoutCart extends Controller {
 			// Totals
 			$this->load->model('setting/extension');
 			
-			$total_data = array();					
-			$total = 0;
+			$total_data = array();
+
+            $total = 0;
+            foreach ($this->cart->getProducts() as $product) {
+                $total += $product['total'];
+            }
+
 			$taxes = $this->cart->getTaxes();
 			
 			// Display prices
@@ -550,8 +555,11 @@ class ControllerCheckoutCart extends Controller {
 				// Totals
 				$this->load->model('setting/extension');
 				
-				$total_data = array();					
-				$total = 0;
+				$total_data = array();
+                $total = 0;
+                foreach ($this->cart->getProducts() as $product) {
+                    $total += $product['total'];
+                }
 				$taxes = $this->cart->getTaxes();
 				
 				// Display prices

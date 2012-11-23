@@ -70,7 +70,10 @@ class ControllerCheckoutConfirm extends Controller {
 						
 		if (!$redirect) {
 			$total_data = array();
-			$total = 0;
+            $total = 0;
+            foreach ($this->cart->getProducts() as $product) {
+                $total += $product['total'];
+            }
 			$taxes = $this->cart->getTaxes();
 			 
 			$this->load->model('setting/extension');
