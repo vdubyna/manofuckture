@@ -723,8 +723,6 @@ a.button:hover, input.button:hover {
 	display: block;
 	font-weight: bold;
 	color: #fecb67;
-	margin-bottom: 4px;
-    float: left;
 }
 .box-product .price-old {
 	color: #F00;
