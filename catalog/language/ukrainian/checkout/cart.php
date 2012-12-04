@@ -21,7 +21,7 @@ Ask a question http://forum.opencart.ua
 $_['heading_title'] = 'Кошик'; #35902
 $_['column_image'] = 'Зображення'; #35903
 $_['column_name'] = 'Назва'; #35904
-$_['column_model'] = 'Модель'; #35905
+$_['column_model'] = 'Розмір'; #35905
 $_['column_quantity'] = 'Кількість'; #35906
 $_['column_total'] = 'Разом'; #35907
 $_['column_price'] = 'Ціна за одиницю'; #36158

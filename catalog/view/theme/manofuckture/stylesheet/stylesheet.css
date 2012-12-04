@@ -6,7 +6,7 @@ html {
 
 @font-face {
     font-family: ManoFont;
-    src: url('WienLight.ttf');
+    src: url('WienLightManu.ttf');
 }
 
 body {
@@ -756,14 +756,12 @@ a.button:hover, input.button:hover {
 	padding: 0;
 }
 .box-category > ul > li {
-	padding: 8px 0px 8px 0px;
     text-align: right;
 
 }
 
 .box-category > ul > li > a {
 	color: #fecb67;
-    background: url("../image/cat_nav_li_dec.png") left center no-repeat;
     padding-left: 20px;
 
 }
@@ -771,7 +769,8 @@ a.button:hover, input.button:hover {
 	display: none;
 }
 .box-category > ul > li a.active {
-    font-size: 36px;
+    background: url("../image/cat_nav_li_dec.png") left center no-repeat;
+
 }
 .box-category > ul > li a.active + ul {
 	display: block;
